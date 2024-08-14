@@ -1,0 +1,50 @@
+1. Hello, Thread!
+Task Explanation:
+
+In this exercise, you will create a new thread of execution in your program. A thread is like a worker that can perform tasks simultaneously with other workers (threads).
+Your task is to have this new thread print the message "Hello, Thread!" while your main program continues running.
+Steps:
+
+Create a new thread.
+Define what the thread should do (print "Hello, Thread!").
+Start the thread so it begins executing.
+
+
+
+2. Counting with Threads
+Task Explanation:
+
+You will create two separate threads. One thread will print even numbers from 1 to 10, and the other will print odd numbers from 1 to 10.
+To ensure the numbers are printed in order (1, 2, 3, ... 10), you will need to synchronize the threads, so they don’t print out of order.
+Steps:
+
+Create two threads, one for even numbers and one for odd numbers.
+Define the task for each thread (printing numbers).
+Use synchronization tools (like locks or semaphores) to make sure the threads coordinate their work and don’t interfere with each other.
+
+
+
+3. Thread Sleep
+Task Explanation:
+
+Create a thread that prints a message every second for five seconds. The thread should pause for one second between messages to simulate a delay.
+This can be achieved by using a function that tells the thread to wait for a specified time before continuing.
+Steps:
+
+Create a new thread.
+In the thread’s task, print the message.
+Use a sleep function to pause the thread for one second after each message.
+Repeat this five times.
+
+
+
+4. Shared Resource Access
+Task Explanation:
+
+You will write a program where multiple threads access and modify a shared variable (a counter). The goal is to ensure the counter's final value is correct after all threads have finished.
+This involves using synchronization to prevent threads from interfering with each other when they access or modify the counter.
+Steps:
+
+Create a shared counter variable.
+Create multiple threads that will increase the counter.
+Use synchronization mechanisms (like locks or synchronized blocks) to ensure that only one thread can modify the counter at a time.
